@@ -164,7 +164,8 @@ span {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 297px 0 78px 0;
+  padding-top: 297px;
+  padding-bottom: 78px;
 }
 
 .banner_content .paragraph {
@@ -220,6 +221,138 @@ span {
 /* Banner area end */
 
 /* About area start  */
+#about {
+  padding-top: 66px;
+  padding-bottom: 66px;
+  background: url("../images/about_bg.svg"), linear-gradient(#f0f0f0, #f0f0f0);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about_header {
+  margin-bottom: 65px;
+}
+
+.about_header .main_heading {
+  margin-bottom: 5px;
+}
+
+.about_card {
+  background-color: var(--white_clr);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  align-items: center;
+  position: relative;
+  min-height: 405px;
+  overflow: hidden;
+  z-index: 1;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.about_card::after,
+.about_card::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 155px;
+  z-index: -1;
+}
+
+.about_card::after {
+  top: 0;
+  right: 0;
+  background: url("../images/ab_card_bg1.svg");
+}
+
+.about_card::before {
+  left: 0;
+  bottom: 0;
+  background: url("../images/ab_card_bg2.svg");
+}
+
+.about_card .about_card_content {
+  min-height: 390px;
+  width: 100%;
+  align-items: center;
+  margin: 7px 6px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.about_card_content .sub_heading {
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.about_card_content .paragraph {
+  font-size: var(--common_size);
+  line-height: var(--normal_line_height);
+  padding-top: 6px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.about_card:hover {
+  background-color: var(--primary_clr);
+  transform: translateY(-19px);
+  -webkit-transform: translateY(-19px);
+  -moz-transform: translateY(-19px);
+  -ms-transform: translateY(-19px);
+  -o-transform: translateY(-19px);
+}
+
+.about_card:hover::after,
+.about_card:hover::before {
+  opacity: 20%;
+}
+
+.about_card:hover .about_card_content {
+  border: 1px solid var(--white_clr);
+}
+
+.about_card:hover .about_card_content .sub_heading,
+.about_card:hover .about_card_content .paragraph {
+  color: var(--white_clr);
+}
+
+.about_button button {
+  background-color: var(--primary_clr);
+  border: none;
+  padding: 15px 23px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-top: 90px;
+  align-items: center;
+  font-size: 20px;
+  color: var(--white_clr);
+  font-weight: var(--font_regular);
+}
+
+.about_button button span {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
 /* About area end */
 
 /* Navbar area start  */
