@@ -456,16 +456,127 @@ span {
 /* Subject area end */
 
 /* CTA area start  */
+#cta {
+  padding-top: 142px;
+  padding-bottom: 142px;
+}
 
 .cta_inner {
   background: url("../images/cta_bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 142px;
-  padding-bottom: 142px;
+}
+
+.cta_content {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.cta_content_heading .paragraph {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.cta_content_buttons {
+  margin-top: 76px;
+  column-gap: 30px;
+}
+
+.cta_content_buttons button {
+  background-color: var(--primary_clr);
+  border: none;
+  padding: 14px 33px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  align-items: center;
+  color: var(--white_clr);
+  font-weight: var(--font_regular);
+}
+
+.cta_content_buttons i {
+  font-size: 30px;
+  padding-right: 18px;
+}
+
+.cta_content_button_text {
+  text-align: left;
+}
+
+.cta_content_button_text span {
+  font-family: "Inter", serif;
+  font-size: var(--para_size);
+  display: block;
+  line-height: var(--normal_line_height);
+}
+
+.cta_content_button_text span:last-child {
+  font-weight: var(--font_blod);
+  padding-top: 4px;
 }
 /* CTA area end */
 
 /* Footer area start  */
+#footer {
+  padding-top: 74px;
+  background-color: var(--primary_clr);
+}
+
+.footer_content {
+  background: url("../images/footer_bg.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 74px;
+}
+
+.footer_main_content h4 {
+  font-size: var(--text_size);
+  font-weight: var(--font_regular);
+  color: var(--white_clr);
+  padding-top: 66px;
+}
+
+.footer_main_content .paragraph {
+  font-size: var(--common_size);
+  color: var(--white_clr);
+  margin-top: 14px;
+  /* padding-right: 65px; */
+}
+
+.footer_menu {
+  margin-top: 112px;
+}
+
+.footer_menu h6 {
+  font-size: var(--text_size);
+  font-weight: var(--font_regular);
+  color: var(--white_clr);
+}
+
+.footer_menu .navigate {
+  column-gap: 47px;
+}
+
+.footer_menu ul {
+  margin-top: 14px;
+}
+
+.footer_menu ul li {
+  font-size: var(--common_size);
+  font-weight: var(--font_regular);
+  color: var(--white_clr);
+  margin-bottom: 17px;
+}
+
+.footer_menu ul li:last-child {
+  margin-bottom: 0;
+}
+
+.sites li {
+  font-family: "Inter", serif;
+}
 /* Footer area end */
