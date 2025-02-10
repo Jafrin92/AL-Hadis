@@ -136,6 +136,7 @@ span {
   font-size: var(--text_size);
   font-weight: var(--font_regular);
   display: flex;
+  column-gap: 12px;
   align-items: center;
 }
 
@@ -182,12 +183,16 @@ span {
   border-radius: 12px;
   background-color: var(--white_clr);
   padding: 6px;
+  overflow: hidden;
 }
 
 .search_bar input {
   width: 70%;
   border: none;
   padding-left: 31px;
+  color: #a9a3b7;
+  font-size: 15px;
+  font-weight: var(--font_medium);
 }
 
 .search_bar input::placeholder {
@@ -196,7 +201,7 @@ span {
   font-weight: var(--font_medium);
 }
 
-.search_button {
+.search_button_main {
   width: 30%;
 }
 

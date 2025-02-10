@@ -20,17 +20,60 @@
         <a class="navbar-brand" href="#">
           <img src="images/logo.svg" alt="logo" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#nav_bar"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="d-block d-lg-none offcan_res">
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">হোম</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >হাদিসে যান</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >হাদিস গ্রন্থসমূহ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >আমাদের প্রজেক্ট</a
+                  >
+                </li>
+              </ul>
+              <div class="sidebar_btn">
+                <button type="button">
+                  সাপোর্ট করুন
+                  <i class="fa-solid fa-hand-holding-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="collapse navbar-collapse" id="nav_bar">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -50,7 +93,7 @@
               >
             </li>
           </ul>
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn">
             সাপোর্ট করুন
             <i class="fa-solid fa-hand-holding-heart"></i>
           </button>
@@ -75,17 +118,30 @@
               </p>
               <div class="banner_search">
                 <h2 class="main_heading">আপনার পছন্দের হাদিস খুঁজুন</h2>
-                <div class="search_bar w-100 d-flex">
+                <div
+                  class="search_bar w-100 d-md-flex justify-content-center align-items-center"
+                >
                   <input type="text" placeholder="সার্চ হাদিস..." />
-                  <div
-                    class="search_button d-flex align-content-center justify-content-end"
-                  >
-                    <i class="fa-solid fa-sliders"></i>
-                    <button class="d-flex">
-                      <span>সার্চ করুন </span>
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                  <i class="fa-solid fa-sliders d-md-none"></i>
+                  <div class="d-none d-md-block search_button_main">
+                    <div
+                      class="search_button d-md-flex align-content-center justify-content-end"
+                    >
+                      <i class="fa-solid fa-sliders d-none d-md-block"></i>
+                      <button class="d-flex">
+                        <span>সার্চ করুন </span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </div>
                   </div>
+                </div>
+                <div
+                  class="search_button d-flex d-md-none align-content-center justify-content-center"
+                >
+                  <button class="d-flex justify-content-center">
+                    <span>সার্চ করুন </span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -112,7 +168,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-4 mb-md-0 col-md-4">
             <div class="about_card d-flex justify-content-center">
               <div
                 class="about_card_content d-flex justify-content-center flex-column"
@@ -122,7 +178,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-4 mb-md-0 col-md-4">
             <div class="about_card d-flex justify-content-center">
               <div
                 class="about_card_content d-flex justify-content-center flex-column"
@@ -132,7 +188,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4">
             <div class="about_card d-flex justify-content-center">
               <div
                 class="about_card_content d-flex justify-content-center flex-column"
@@ -195,7 +251,7 @@
         </div>
         <div class="subject_item">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-3 mb-md-0 col-md-4">
               <div class="subject_card d-flex justify-content-center">
                 <div class="subject_card_content text-center">
                   <h3 class="sub_heading">আকিদা</h3>
@@ -203,7 +259,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 mb-3 mb-md-0 col-md-4">
               <div class="subject_card d-flex justify-content-center">
                 <div class="subject_card_content text-center">
                   <h3 class="sub_heading">ঈমান</h3>
@@ -211,7 +267,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
               <div class="subject_card d-flex justify-content-center">
                 <div class="subject_card_content text-center">
                   <h3 class="sub_heading">সালাত</h3>
@@ -255,9 +311,9 @@
                   </p>
                 </div>
                 <div
-                  class="cta_content_buttons d-flex justify-content-center align-items-center"
+                  class="cta_content_buttons d-flex flex-column flex-md-row justify-content-center align-items-center"
                 >
-                  <button class="d-flex">
+                  <button class="d-flex mb-3 mb-md-0">
                     <i class="fa-brands fa-google-play"></i>
                     <div class="cta_content_button_text">
                       <span>Get in on</span>
@@ -321,7 +377,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-6">
                   <div class="footer_menu">
                     <h6>আমাদের প্রজেক্ট সমূহ</h6>
                     <ul>
@@ -332,7 +388,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-6">
                   <div class="footer_menu">
                     <h6>জনপ্রিয় সাইটসমূহ</h6>
                     <ul class="sites">
